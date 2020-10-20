@@ -1,0 +1,61 @@
+ErrorDocument 404 /404.html
+RemoveHandler .html  .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{SCRIPT_FILENAME} !-f
+  RewriteCond %{SCRIPT_FILENAME} !-d
+
+  RewriteCond $1 !^(index\.html|images|robots\.txt|favicon\.ico)
+	RewriteRule ^$ index.html [NC,L]
+	RewriteRule ^index$ index.html [NC,L]
+	RewriteRule ^nig/index$ nig/index.html [NC,L]
+	RewriteRule ^nig/abia$ nig/abia.html [NC,L]
+	RewriteRule ^nig/adamawa$ nig/adamawa.html [NC,L]
+	RewriteRule ^nig/akwa-ibom$ nig/akwa-ibom.html [NC,L]
+	RewriteRule ^nig/anambra$ nig/anambra.html [NC,L]
+	RewriteRule ^nig/abuja$ nig/abuja.html [NC,L]
+	RewriteRule ^nig/bauchi$ nig/bauchi.html [NC,L]
+	RewriteRule ^nig/bayelsa$ nig/bayelsa.html [NC,L]
+	RewriteRule ^nig/benue$ nig/benue.html [NC,L]
+	RewriteRule ^nig/Borno$ nig/Borno.html [NC,L]
+	RewriteRule ^nig/cross-river$ nig/cross-river.html [NC,L]
+	RewriteRule ^nig/delta$ nig/delta.html [NC,L]
+	RewriteRule ^nig/ebonyi$ nig/ebonyi.html [NC,L]
+	RewriteRule ^nig/edo$ nig/edo.html [NC,L]
+	RewriteRule ^nig/ekiti$ nig/ekiti.html [NC,L]
+	RewriteRule ^nig/enugu$ nig/enugu.html [NC,L]
+	RewriteRule ^nig/gombe$ nig/gombe.html [NC,L]
+	RewriteRule ^nig/imo$ nig/imo.html [NC,L]
+	RewriteRule ^nig/jigawa$ nig/jigawa.html [NC,L]
+	RewriteRule ^nig/kaduna$ nig/kaduna.html [NC,L]
+	RewriteRule ^nig/kano$ nig/kano.html [NC,L]
+	RewriteRule ^nig/katsina$ nig/katsina.html [NC,L]
+	RewriteRule ^nig/kebbi$ nig/kebbi.html [NC,L]
+	RewriteRule ^nig/kogi$ nig/kogi.html [NC,L]
+	RewriteRule ^nig/kwara$ nig/kwara.html [NC,L]
+	RewriteRule ^nig/Lagos$ nig/Lagos.html [NC,L]
+	RewriteRule ^nig/nasarawa$ nig/nasarawa.html [NC,L]
+	RewriteRule ^nig/niger$ nig/niger.html [NC,L]
+	RewriteRule ^nig/ogun$ nig/ogun.html [NC,L]
+	RewriteRule ^nig/ondo$ nig/ondo.html [NC,L]
+	RewriteRule ^nig/osun$ nig/osun.html [NC,L]
+	RewriteRule ^nig/oyo$ nig/oyo.html [NC,L]
+	RewriteRule ^nig/plateau$ nig/plateau.html [NC,L]
+	RewriteRule ^nig/rivers$ nig/rivers.html [NC,L]
+	RewriteRule ^nig/sokoto$ nig/sokoto.html [NC,L]
+	RewriteRule ^nig/taraba$ nig/taraba.html [NC,L]
+	RewriteRule ^nig/yobe$ nig/yobe.html [NC,L]
+	RewriteRule ^nig/zamfara$ nig/zamfara.html [NC,L]
+	RewriteRule ^safety$ safety.html [NC,L]
+	RewriteRule ^404$ 404.html [NC,L]
+	RewriteRule ^developer$ https://twitter.com/AmAnthonyOkagba [NC,L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler text/html .html .html
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
