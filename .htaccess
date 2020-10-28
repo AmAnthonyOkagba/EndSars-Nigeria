@@ -49,6 +49,7 @@ RemoveHandler .html  .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
 	RewriteRule ^nig/yobe$ nig/yobe.html [NC,L]
 	RewriteRule ^nig/zamfara$ nig/zamfara.html [NC,L]
 	RewriteRule ^safety$ safety.html [NC,L]
+	RewriteRule ^youths-killed$ youths-killed.html [NC,L]
 	RewriteRule ^404$ 404.html [NC,L]
 	RewriteRule ^developer$ https://twitter.com/AmAnthonyOkagba [NC,L]
 </IfModule>
