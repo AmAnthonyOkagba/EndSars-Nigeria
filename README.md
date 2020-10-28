@@ -27,7 +27,7 @@ Terminal (cmd recommended)
 
 ## Authors
 
-* **Anthony Okagba** - *Project Lead* - [collinsduzzy](https://github.com/AmAnthonyOkagba)
+* **Anthony Okagba** - *Project Lead* - [Anthony Okagba](https://github.com/AmAnthonyOkagba)
 
 ## License
 
